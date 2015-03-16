@@ -10,7 +10,49 @@ namespace Assignment04_Dice_Rolling_App
     {
         static void Main(string[] args)
         {
+            RollingDice dice = new RollingDice();
+            int numOfTimes = 0;
 
+            // gets the number of times the dice is to be rolled
+            do
+            {
+                Console.Write("Enter the amount of times to roll the dice: ");
+
+                try
+                {
+                    numOfTimes = int.Parse(Console.ReadLine());
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Why are you trying to break this here program, sir?");
+                    Console.WriteLine("-----------------");
+                    continue;
+                }
+            } while (numOfTimes == 0);
+            
+            dice.rollDice(numOfTimes);
+
+            Console.WriteLine("-----------------");
+            Console.WriteLine(" Value \t Tally");
+            Console.WriteLine("-----------------");
+
+            // displays the sum from 2 to 12 and the tally of each sum
+            for (int i = 2; i < 13; i++)
+            {
+                Console.WriteLine(" {0} \t {1}", i, dice.SumTally[i - 2]);
+            }
+
+            waitForAnyKey();
+        }
+
+        // pauses the program and waits for the user to confirm exit
+        private static void waitForAnyKey()
+        {
+            Console.Write("\n");
+            Console.WriteLine("------------------------------");
+            Console.WriteLine("Please hit any key to exit...");
+
+            Console.ReadKey();
         }
     }
 }
