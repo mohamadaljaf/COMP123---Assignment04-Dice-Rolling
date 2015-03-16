@@ -1,4 +1,19 @@
-﻿using System;
+﻿///------------------------------------------------------------------------------------------
+///   Project:              Assignment 04 - Dice Rolling
+/// 
+///   Author:               Mohamad Al-Jaf   
+///   
+///   Date last modified:   March 15, 2015
+///   
+///   Program description:  A program that rolls a set of dice for a user-input number of
+///                         times and displays the tally of the sum of the two dice rolled.
+///                         
+///   Revision History:     2015-03-15: Initial build
+///                         2015-03-15: Added a Dice class and implemented the rollDice method
+///                         2015-03-15: Fixed an issue where the tally numbers were incorrect
+///                         2015-03-15: Added documentation
+///------------------------------------------------------------------------------------------
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
