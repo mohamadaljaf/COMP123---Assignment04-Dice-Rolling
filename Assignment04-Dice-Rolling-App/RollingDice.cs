@@ -1,7 +1,7 @@
 ﻿///------------------------------------------------------------------------------------------
 ///   Author:               Mohamad Al-Jaf   
 ///   
-///   Date last modified:   March 15, 2015
+///   Date last modified:   March 20, 2015
 ///   
 ///   Class description:    A set of rolling dice that tallies the sum of both dice and allows
 ///                         the user to roll the dice an x amount of times.
@@ -33,6 +33,7 @@ namespace Assignment04_Dice_Rolling_App
             _sumTally = new int[11];
         }
 
+        // PUBLIC METHODS ******************************************
         // rolls the dice a number of times and tallies the sum
         public void rollDice(int numOfTimes)
         {

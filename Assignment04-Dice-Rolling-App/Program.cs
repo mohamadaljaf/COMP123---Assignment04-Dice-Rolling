@@ -3,7 +3,7 @@
 /// 
 ///   Author:               Mohamad Al-Jaf   
 ///   
-///   Date last modified:   March 15, 2015
+///   Date last modified:   March 20, 2015
 ///   
 ///   Program description:  A program that rolls a set of dice for a user-input number of
 ///                         times and displays the tally of the sum of the two dice rolled.
@@ -12,6 +12,7 @@
 ///                         2015-03-15: Added a Dice class and implemented the rollDice method
 ///                         2015-03-15: Fixed an issue where the tally numbers were incorrect
 ///                         2015-03-15: Added documentation
+///                         2015-03-20: Added more documentation
 ///------------------------------------------------------------------------------------------
 using System;
 using System.Collections.Generic;
@@ -39,6 +40,7 @@ namespace Assignment04_Dice_Rolling_App
                 }
                 catch (Exception)
                 {
+                    Console.WriteLine("-----------------");
                     Console.WriteLine("Why are you trying to break this here program, sir?");
                     Console.WriteLine("-----------------");
                     continue;
